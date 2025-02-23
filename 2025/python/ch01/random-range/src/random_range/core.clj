@@ -12,8 +12,7 @@
 (defn- corrupt []
   (println "Corrupt"))
 
-(defn -main
-  [& args]
+(defn -main [& args]
   (when (= (count args) 2)
     (try 
       (let [[a b] (map #(Integer/parseInt %) args)]

@@ -53,8 +53,7 @@
 (defn- corrupt []
   (println "Corrupt"))
 
-(defn -main
-  [& args]
+(defn -main [& args]
   (when (= (count args) 3)
     (try 
       (let [[a b c] (map #(Double/parseDouble %) args)]
